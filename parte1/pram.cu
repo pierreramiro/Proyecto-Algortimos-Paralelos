@@ -47,7 +47,7 @@ int main() {
 	if (K == 0) {
 		return 0;
 	}
-	printf("CPU time:\n");
+	printf("CPU:\n");
 	startCPU = clock();
 	for (unsigned int z = 0; z < iterCPU; z++)
 	{
