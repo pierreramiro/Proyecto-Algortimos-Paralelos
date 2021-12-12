@@ -30,6 +30,7 @@ int main() {
 		//printf("%u\n", Image[z]);
 	}
 	//Imprimimos la matriz
+	printf("Creamos la matriz\n");
 	for (unsigned int i = 0; i < H; i++) {
 		for (unsigned int j = 0; j < W; j++) {
 			printf("%u\t", Image[i * W + j]);
@@ -88,6 +89,7 @@ int main() {
 		}
 	}
 	//Imprimimos la matriz
+	printf("Aplicamos filtro de mediana para K=%d\n", K);
 	for (unsigned int i = 0; i < H; i++) {
 		for (unsigned int j = 0; j < W; j++) {
 			printf("%u\t", I_filtered[i * W + j]);
