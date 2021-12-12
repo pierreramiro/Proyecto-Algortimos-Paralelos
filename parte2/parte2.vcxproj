@@ -13,6 +13,9 @@
   <ItemGroup>
     <CudaCompile Include="pram.cu" />
   </ItemGroup>
+  <ItemGroup>
+    <Image Include="bmw2560Color.tiff" />
+  </ItemGroup>
   <PropertyGroup Label="Globals">
     <ProjectGuid>{82BB207B-F931-47C4-98D3-CE4F035EEEB9}</ProjectGuid>
     <RootNamespace>parte2</RootNamespace>
