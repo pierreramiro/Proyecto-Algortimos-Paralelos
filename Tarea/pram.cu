@@ -214,7 +214,7 @@ int main()
 	//ejecutamos el Kernel
 	eScanGPU_up << <numBlocks, threadsPerBlock >> > (d_dst_up, d_src_up, numBlocks);
 	cudaDeviceSynchronize();
-	cudaerr = cudaMemcpy(d_dst_mid, d_dst_up, sizeof(unsigned int) * ngpu, cudaMemcpyHostToDevice);
+	cudaerr = cudaMemcpy(d_dst_mid, d_dst_up, sizeof(unsigned int) * ngpu, cudaMemcpyDeviceToDevice);
 	if (cudaerr != 0)	printf("ERROR copying in data to d_src (Host to Dev). CudaMalloc value=%i\n\r", cudaerr);
 	eScanGPU_mid << <1, threadsPerBlock >> > (d_dst_mid, d_dst_up);
 	cudaDeviceSynchronize();
